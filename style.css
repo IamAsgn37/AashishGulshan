@@ -1,0 +1,95 @@
+/* CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+   
+}
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin: 3px 5px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 5px;
+
+}
+
+/* Navigatio Bar List Stylng*/
+#navbar ul{
+    display: flex;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+#navbar ul li a{
+    display: flex;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+/*Home Page Section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("bg5.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    font-size: 1.6rem;
+}
+
+/*Footer Part*/
+
+#footer{
+    background-color: aquamarine;
+}
+
+#footer ul{
+    align-content: flex-end;
+}
